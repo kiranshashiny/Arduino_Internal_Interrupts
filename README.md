@@ -5,7 +5,14 @@ This code counts from 1 to 5 and stops counting.
 
 No hard ware required.
 
-Uses Timer1 ISR
+Uses Timer1 ISR, 
+Timer1.initialize() to start, 
+Timer1.detachInterrupt () to stop.
+
+
+Use Volatile if you have a variable to play with in the ISR.
+Do not use Serial print lines in ISRs.
+Timer.initialize takes an argument that's 1 second.
 
 ```
 #include <TimerOne.h>
@@ -45,3 +52,8 @@ void loop() {
 }
 
 ```
+
+
+To count down ,
+
+initialize count to 10, and count-- in loop() and if count == 0  stop interrupt.
