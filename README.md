@@ -3,6 +3,10 @@
 
 This code counts from 1 to 5 and stops counting.
 
+The basics for this Interrupts is from this link.
+
+https://www.circuitbasics.com/how-to-use-hardware-interrupts-and-timer-interrupts-on-the-arduino/
+
 No hard ware required.
 
 Uses Timer1 ISR, 
